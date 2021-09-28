@@ -1,0 +1,20 @@
+body {
+  background: #0d1323;
+  color: #eee;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.card_wrapper {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.card_profile {
+}
+.card_options {
+}
+.card_track {
+}
