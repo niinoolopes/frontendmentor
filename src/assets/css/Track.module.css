@@ -1,0 +1,100 @@
+.track {
+  display: grid;
+  grid-auto-rows: max-content;
+}
+.header {
+  grid-row: 1;
+
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 0.65rem 0.65rem 0 0;
+
+  height: 3rem;
+  padding: 0.1rem;
+
+  overflow: hidden;
+}
+.header img {
+  width: 50px;
+  height: 50px;
+  margin-top: -0.5rem;
+  margin-right: 1rem;
+}
+.body {
+  grid-row: 2;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto;
+
+  margin-top: -1rem;
+  padding: 0.75rem 1.25rem;
+
+  background: #1d204b;
+  border-radius: 0.65rem;
+}
+.body_active {
+  background: #34397b;
+}
+.name,
+.duration,
+.lastWeek {
+  line-height: 1;
+  margin: 0;
+  color: #fff;
+}
+.name {
+  grid-column: 1;
+  grid-row: 1;
+
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-family: monospace;
+  line-height: 2;
+}
+.duration {
+  grid-column: 1/2;
+  grid-row: 2;
+
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: "system-ui", sans-serif;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+.lastWeek {
+  grid-column: 1/2;
+  grid-row: 3;
+
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75rem;
+  line-height: 2;
+}
+.actions {
+  grid-column: 2;
+  grid-row: 1;
+
+  min-height: 1.65rem;
+
+  display: flex;
+
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+
+  font-weight: 600;
+  font-size: 1rem;
+}
+.actions:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.75);
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+/* 425px */
+@media (max-width: 425px) {
+}
+@media (min-width: 425px) {
+}
